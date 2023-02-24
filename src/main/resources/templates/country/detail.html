@@ -13,5 +13,6 @@
             <tr><th>人工</th><td><input type="text" name="population" th:value="*{population}"></td></tr>
         </table>
         <button type="submit">送信</button>
+        <a th:href="@{/country/list/{list}(list=${list})}">一覧に戻る</a>
     </form>
 </body>

@@ -51,6 +51,8 @@ public class CountryController{
     //------削除画面---------
     @GetMapping("/delete")
     public String deleteCountryForm(Model model) {
+
+        //model.addAttribute("code", service.getCountry(code));
         //country/delete.html
         return "country/delete";
     }
